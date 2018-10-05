@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free mail domains</title>
+</head>
+<body>
+<pre id="result"></pre>
+
+<script type="text/javascript" src="js/freemail-domains.js"></script>
+<script type="text/javascript">
+    getFreeMailDomains().then(value => {
+        const result = JSON.stringify(value, null, 2);
+        document.getElementById('result').innerText = result;
+    });
+</script>
+</body>
+</html>
